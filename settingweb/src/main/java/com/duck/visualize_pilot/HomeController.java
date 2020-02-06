@@ -1,4 +1,4 @@
-package com.duck.settingweb;
+package com.duck.visualize_pilot;
 
 import java.util.List;
 import java.util.Locale;
