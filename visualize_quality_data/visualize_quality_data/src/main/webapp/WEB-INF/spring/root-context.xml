@@ -8,13 +8,12 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-	
 	<bean id="dataSource"
     class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     <property name="driverClassName"
         value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
     <property name="url"
-        value="jdbc:log4jdbc:mariadb://127.0.0.1:3306/theater" />
+        value="jdbc:log4jdbc:mariadb://127.0.0.1:3306/wine_quality" />
     <property name="username" value="root" />
     <property name="password" value="csb7256!" />
 	</bean>
@@ -34,8 +33,8 @@
 	        ref="sqlSessionFactory"></constructor-arg>
 	</bean>
 	
-	<!-- <mybatis-spring:scan base-package="com.duck.dao" /> -->
-	<context:component-scan base-package="com.duck.dao"/>
-	<context:component-scan base-package="com.duck.service"></context:component-scan>	
+	<!-- <mybatis-spring:scan base-package="com.duck.myapp.dao" /> -->
+	<context:component-scan base-package="com.duck.myapp.dao"/>
+	<context:component-scan base-package="com.duck.myapp.service"></context:component-scan>	
 		
 </beans>
