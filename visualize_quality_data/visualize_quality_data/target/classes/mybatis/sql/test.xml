@@ -16,7 +16,7 @@
     -->
     
     <select id="selectWine" resultType="wineVO">
-        SELECT PRODUCT_SEQ, QUALITY FROM PRODUCT_QUALITY
+        SELECT PRODUCT_SEQ, QUALITY FROM PRODUCT_QUALITY WHERE (PRODUCT_SEQ BETWEEN 1 AND 10)
     </select>
     
 </mapper>
